@@ -1,4 +1,3 @@
-@media screen and (min-width: 1440px){
     .card{
         width: 600px;
         background-color: hsl(0, 0%, 100%);
@@ -80,19 +79,22 @@
         cursor: pointer;
         
     }
-}
+
 
 
 @media screen and (max-width: 375px){
     .card{
+        width: 90%;
+        height: inherit;
         background-color: hsl(0, 0%, 100%);
         border-radius: 16px;
         overflow: hidden;
+        display:contents;
     }
 
     .card img{
         background-image: '/assets/image-product-mobile.jpg';
-        max-width: 100%;
+        
         
     }
     .info{
