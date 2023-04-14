@@ -7,7 +7,8 @@ import cartIcon from '../assets/icon-cart.svg'
 export function Card(){
     return(
         <section className='card'>
-            <img src={perfume} alt='imagem promo'/>
+            
+            <div className="img-perfume"></div>
 
             <section className='info'>
                 <p>P E R F U M E</p>

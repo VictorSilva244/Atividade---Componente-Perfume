@@ -1,24 +1,28 @@
+
     .card{
         width: 600px;
+        height: 450px;;
         background-color: hsl(0, 0%, 100%);
-        display: flex;
+        display:flex;
         border-radius: 16px;
         overflow: hidden;
+
     }
 
-    .card img{
-        max-width: 50%;
-        
+    
+
+    .card .img-perfume{      
+        width: 50%;
+        background-image: url("../assets/image-product-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size:contain;
     }
 
 
 
     .info{
-
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 16px;
-
+        width: 50%;       
+        padding: 32px;
     }
 
     .info h1{
@@ -27,6 +31,7 @@
         font-weight: 700;
         font-size: 32px;
         line-height: 32px;
+        padding-bottom: 16px;
         
     }
 
@@ -36,16 +41,18 @@
         font-size: 14px;
         font-weight: 500;
         font-family: 'Montserrat', sans-serif;
+        padding-bottom: 16px;
         
     }
 
-    .preços {
+    .info .preços {
         display: flex;
+        padding-bottom: 16px;
         
 
     }
 
-    .preços .precoAtual{
+    .info .preços .precoAtual{
         line-height: 32px;
         font-size: 32px;
         font-weight: 700;
@@ -53,7 +60,7 @@
         font-family: 'Fraunces', serif;
     }
 
-    .preços .precoOriginal{
+    .info .preços .precoOriginal{
         line-height: 23px;
         font-size: 13px;
         font-weight: 500;
@@ -73,6 +80,7 @@
         color: white;
         font-size: 14px;
         font-weight: 700;
+        margin-top: 32px;
     }
 
     .info button:hover{
@@ -82,87 +90,40 @@
 
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
+    
     .card{
-        width: 90%;
-        height: inherit;
+        
+        width: calc( 100% - 32px);
+        height: 80%;
         background-color: hsl(0, 0%, 100%);
+        display:block;
         border-radius: 16px;
-        overflow: hidden;
-        display:contents;
+        position: absolute;
+        left: 16px;
+        top: 28px;
+        
+
     }
 
-    .card img{
-        background-image: '/assets/image-product-mobile.jpg';
-        
-        
+    .card .img-perfume{
+
+        background-image: url("../assets/image-product-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size:contain;
+        height: 40%;
+        width: 100%;
     }
+
     .info{
-
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 16px;
-
-    }
-
-    .info h1{
-        color: hsl(212, 21%, 14%);
-        font-family: 'Fraunces', serif;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 32px;
-        
-    }
-
-    .info p{
-        color: hsl(228, 12%, 48%);
-        line-height: 23px;
-        font-size: 14px;
-        font-weight: 500;
-        font-family: 'Montserrat', sans-serif;
-        
-    }
-
-    .preços {
-        display: flex;
-        
-
-    }
-
-    .preços .precoAtual{
-        line-height: 32px;
-        font-size: 32px;
-        font-weight: 700;
-        color: hsl(158, 36%, 37%);
-        font-family: 'Fraunces', serif;
-    }
-
-    .preços .precoOriginal{
-        line-height: 23px;
-        font-size: 13px;
-        font-weight: 500;
-        color: hsl(228, 12%, 48%);
-        text-decoration: line-through;
-        margin-left: 16px;
-        font-family: 'Montserrat', sans-serif;
+        width: 100%;        
+        padding: 16px;
     }
 
     .info button{
+        position: absolute;
+        width: calc(100% - 32px);
+        bottom: 16px;
         border-radius: 8px;
-        background-color: hsl(158, 36%, 37%);
-        width: 100%;
-        border: 0px;
-        margin-top: 16px;
-        height: 3rem;
-        color: white;
-        font-size: 14px;
-        font-weight: 700;
     }
-
-    .info button:hover{
-        cursor: pointer;
-        
-    }
-
-
 }
